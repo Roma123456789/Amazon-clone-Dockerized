@@ -5,7 +5,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('docker-token')
+    DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
     APP_NAME = "igorromaric/amazon-app"
     }
     stages { 
